@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <title> Brainfuck Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>         
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<div id="viewer">
+    <div class="tape">
+        <ul id="turing_tape">
+            <li><p>0</p></li>
+            <li><p>0</p></li>
+            <li><p>0</p></li>
+            <li><p>0</p></li>
+            <li><p>0</p></li> 
+			<li><p>0</p></li>
+			<li><p>0</p></li>
+			<li><p>0</p></li>
+			<li><p>0</p></li>
+			<li><p>0</p></li>
+            <li><p>0</p></li>
+            <li><p>0</p></li>
+            <li><p>0</p></li> 
+        </ul>
+    </div>
+    
+    <img src="pointer.png" id="pointer">
+</div>
+<div id="userControl">
+
+
+    <div id="buttonTry">
+        <button type="button" id="run">Play</button>
+        <button type="button" id="stop">Pause</button>
+        <button type="button" id="backward">Backward</button>
+        <button type="button" id="forward">Forward</button>
+        <button type="button" id="clear">Reset</button>
+
+
+        <select id="speedSelect">
+            <option>Slow</option>
+            <option>Normal</option>
+            <option selected>Fast</option>
+            <option>Seizure</option>
+            <option>Instant</option>
+        </select>
+    
+        <select id="codeSelect">
+            <option>Example Codes</option>
+            <option>Hello World!</option>
+            <option>Quine</option>
+            <option>Fibonacci</option>
+        </select>
+    </div>
+
+
+    <br>
+
+	<p class="label">Code</p> 
+	<div class="textContainer">
+    <div class="formBG"></div>
+    <textarea cols="20" rows="50" id="userControlTextArea"></textarea>
+	</div>
+    
+    <p class="label">Output</p>
+    <div class="textContainer">
+    <div class="formBG"></div>
+    <textarea cols="20" rows="50" id="userControlOutput"></textarea>
+    </div>
+	
+
+</div>
+
+
+</body>
+</html>
